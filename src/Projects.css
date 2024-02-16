@@ -1,0 +1,6 @@
+.hover-effect:hover {
+    transform: scale(0.9); /* Increase the size of the image on hover */
+    transition: transform 0.2s ease; /* Add smooth transition */
+  }
+
+  

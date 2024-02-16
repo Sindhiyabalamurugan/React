@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100vh; /* Set the height to fill the viewport */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0000AA !important; /* Dark blue color */
+  border-radius: 50%; /* Make the arrows round */
+  width: 30px; /* Adjust the size of the arrows */
+  height: 30px;
+  margin-top: -15px; /* Center the arrows vertically */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #5bc0de !important; /* Lighter sky blue color on hover */
+}
+.carousel-caption h1,
+.carousel-caption p {
+   /* Dark blue color */
+  font-weight: bold; /* Make the text bold */
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.city-card {
+  perspective: 1000px;
+}
+
+.city-card:hover .card {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card .card-body {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust background color opacity as needed */
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.contact-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info .container small {
+  color: #333;
+}
+
+.contact-info .container small i {
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.custom-container {
+  width: 90%; /* Adjust the width as needed */
+  margin: auto; /* Center the container horizontally */
+}

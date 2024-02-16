@@ -1,0 +1,12 @@
+.feature-box {
+    transition: all 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    background-color: blue;
+  }
+  
+  .feature-box:hover h4,
+  .feature-box:hover p {
+    color: white;
+  }

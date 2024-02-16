@@ -1,0 +1,32 @@
+.container-fluid.callback {
+  background: linear-gradient(to bottom, blue 50%, white 50%);
+}
+.container.pt-5 {
+  position: relative;
+  z-index: 1; /* Ensure content appears above the background */
+}
+
+.bg-white {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.bg-blue {
+  border-radius: 10px;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.iframeVideo {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.iframeVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,23 @@
+/* Register.css */
+
+.input-container {
+    margin-bottom: 16px; /* Default margin for all views */
+    justify-content: center;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .input-container {
+      margin-bottom: 25px; /* Increased margin for mobile view */
+    }
+  }
+
+  .input-login {
+    margin-bottom: 16px; /* Adjust the margin as needed */
+  }
+
+  @media (max-width: 600px) {
+  .input-login {
+    margin-bottom: 10px; /* Adjusted margin for mobile view */
+  }
+}

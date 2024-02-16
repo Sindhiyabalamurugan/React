@@ -1,0 +1,83 @@
+/* CandidateStatusReport.css */
+
+.candidate-status-report-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .boxes-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+  }
+  
+  .box {
+    flex: 1;
+    border: none; /* Remove border */
+    border-radius: 8px; /* Add border radius to create rounded corners */
+    padding: 20px; /* Add padding for content */
+    box-sizing: border-box;
+    margin: 10px; /* Add margin between boxes */
+    width: calc(50% - 20px); /* Set width to 50% minus margins for two boxes in a row */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: all 0.3s ease; /* Add smooth transition for hover effect */
+    background-color: #fff; /* Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  .box:hover {
+    transform: translateY(-5px); /* Move box up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .boxes-container {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      align-items: center; /* Center align boxes */
+    }
+  
+    .box {
+      width: 100%; 
+      height: 10px;/* Set width to full for single column layout */
+    }
+  }
+  
+  .button-1 {
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Add border radius to create rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: all 0.3s ease; /* Add smooth transition for hover effect */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Set font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-decoration: none; /* Remove default underline */
+    width: 200px;
+    margin-top: 150px;
+    margin-left: 1300px;
+   
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darken background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+  
+  /* Adjust button width for mobile view */
+  @media (max-width: 768px) {
+    .button {
+      width: 100%; /* Set button width to full for smaller screens */
+    }
+  }
