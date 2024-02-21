@@ -29,7 +29,7 @@ const Createlink = () => {
           mobile: mobile,
           referrer_id: referrerId
         },
-        url: "http://localhost:3002/r/new"
+        url: "http://inde.physioplustech.in/r/new"
       })
         .then((res) => {
           setReferralLink(res.data.link);
@@ -45,7 +45,7 @@ const Createlink = () => {
       navigator.share({
         title: "Referral Link",
         text: "Check out this referral link",
-        url: `http://localhost:3002/c/register/${referralLink}`
+        url: `http://inde.physioplustech.in/c/register/${referralLink}`
       })
         .then(() => console.log('Successfully shared'))
         .catch((error) => console.error('Error sharing:', error));
@@ -90,7 +90,7 @@ const Createlink = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  http://localhost:3002/c/register/{referralLink}
+                  http://inde.physioplustech.in/c/register/{referralLink}
                 </a>
               </p>
               <button className="btn btn-secondary" onClick={shareLink}>
