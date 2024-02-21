@@ -24,7 +24,7 @@ function SignUpForm() {
 
   const handleSendOTP = async () => {
     try {
-      await axios.post('http://localhost:3002/r/sendOTP', formData);
+      await axios.post('http://inde.physioplustech.in/r/sendOTP', formData);
       setShowOTPInput(true);
       setOtpValid(true); // Reset OTP validation state
       setOtpSent(true); // Set OTP sent state to true
