@@ -33,7 +33,7 @@ function App() {
         
         <Routes>
         
-          <Route exact path="/signup" element={<SignUpForm />} />
+          <Route exact path="/" element={<SignUpForm />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<CandidateStatusReport />} />
           <Route path="/createlink/:referrerId" element={<Createlink />} />
