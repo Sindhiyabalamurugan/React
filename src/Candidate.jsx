@@ -95,7 +95,7 @@ const Candidate = () => {
   useEffect(() => {
     const fetchCandidateDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/candidate/${candidateId}`);
+        const response = await fetch(`http://inde.physioplustech.in/candidate/${candidateId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch candidate details');
         }
