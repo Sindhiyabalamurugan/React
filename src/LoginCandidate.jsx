@@ -14,7 +14,7 @@ const LoginCandidate = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:3002/c/login", {
+      const response = await fetch("http://inde.physioplustech.in/c/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
