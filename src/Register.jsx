@@ -30,7 +30,7 @@ const Register = () => {
   const getmobileNumber = () => {
     axios({
       method: "post",
-      url: "http://localhost:3002/c/getlinkreferral",
+      url: "http://inde.physioplustech.in/c/getlinkreferral",
       data: {
         link: id
       }
@@ -84,7 +84,7 @@ const Register = () => {
 
     axios({
       method: "post",
-      url: "http://localhost:3002/c/otp",
+      url: "http://inde.physioplustech.in/c/otp",
       data: obj
     })
       .then((res) => {
@@ -111,7 +111,7 @@ const Register = () => {
 
       axios({
         method: "post",
-        url: "http://localhost:3002/c/signup",
+        url: "http://inde.physioplustech.in/c/signup",
         data: obj
       })
         .then((res) => {
