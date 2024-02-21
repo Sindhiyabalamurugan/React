@@ -31,7 +31,7 @@ const Login = () => {
 
   const handleVerifyOTP = async () => {
     try {
-      const response = await axios.post('http://localhost:3002/r/verifyOTP', { mobile, otpEntered: otp });
+      const response = await axios.post('http://inde.physioplustech.in/r/verifyOTP', { mobile, otpEntered: otp });
       setIsValidOTP(response.data.isValid);
       if (response.data.isValid) {
         // Store token in localStorage
@@ -62,7 +62,7 @@ const Login = () => {
           className="form-control"
         />
       </div>
-      <p>Don't have an account? <Link to="/signup">Create an Account</Link>.</p>
+      <p>Don't have an account? <Link to="/">Create an Account</Link>.</p>
       <button onClick={handleVerifyUser} className="btn btn-primary">Verify User</button>
       {showOTPField && (
         <div>
