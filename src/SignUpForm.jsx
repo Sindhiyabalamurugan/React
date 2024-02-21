@@ -37,7 +37,7 @@ function SignUpForm() {
 
   const handleValidateOTP = async () => {
     try {
-      const response = await axios.post('http://localhost:3002/r/verifyOTP', {
+      const response = await axios.post('http://inde.physioplustech.in/r/verifyOTP', {
         mobile: formData.mobile,
         otpEntered: formData.otpEntered
       });
