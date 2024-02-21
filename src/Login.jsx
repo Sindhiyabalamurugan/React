@@ -17,7 +17,7 @@ const Login = () => {
 
   const handleVerifyUser = async () => {
     try {
-      const response = await axios.post('http://localhost:3002/r/login', { mobile });
+      const response = await axios.post('http://inde.physioplustech.in/r/login', { mobile });
       const isUserExists = response.data.error !== 'User not found';
       if (isUserExists) {
         setShowOTPField(true);
