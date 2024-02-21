@@ -16,7 +16,7 @@ const CandidateStatusReport = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     
-    axios.get(`http://localhost:3002/r/candidateStatusReport?token=${token}`)
+    axios.get(`http://inde.physioplustech.in/r/candidateStatusReport?token=${token}`)
       .then(response => {
         const { totalCandidates, totalIncome, registeredCandidates, totalPlacedCandidates, referrerId } = response.data;
         setTotalCandidates(totalCandidates);
