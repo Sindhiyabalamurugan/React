@@ -62,7 +62,7 @@ const Login = () => {
           className="form-control"
         />
       </div>
-      <p>Don't have an account? <Link to="/signup">Create an Account</Link>.</p>
+      <p>Don't have an account? <Link to="/">Create an Account</Link>.</p>
       <button onClick={handleVerifyUser} className="btn btn-primary">Verify User</button>
       {showOTPField && (
         <div>
