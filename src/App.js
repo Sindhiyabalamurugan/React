@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css'; // If you have any custom CSS
+
+import Home from './Home';
+
 import Carousel from './CarouselComponent'; // Assuming Carousel component is in a separate file called Carousel.js
 
 import HeaderComponent from './HeaderComponent';
@@ -20,7 +23,7 @@ import Createlink from './Createlink';
 import Register from './Register';
 import LoginCandidate from './LoginCandidate';
 import Candidate from './Candidate';
-
+import CarouselComponent from './CarouselComponent';
 
 function App() {
   return (
@@ -32,15 +35,17 @@ function App() {
        
         
         <Routes>
-        
-          <Route exact path="/" element={<SignUpForm />} />
+          <Route path='/home' element={<Home/>}/>
+          <Route exact path="/signup" element={<SignUpForm />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<CandidateStatusReport />} />
           <Route path="/createlink/:referrerId" element={<Createlink />} />
           <Route path="/register/:id" element={<Register />} />
           <Route path="/c/login" element={<LoginCandidate />} />
           <Route path="/candidate/:candidateId" element={<Candidate />} />
+
           
+
         </Routes>
        
       </div>
