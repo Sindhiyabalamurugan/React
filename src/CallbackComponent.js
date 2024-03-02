@@ -24,7 +24,7 @@ function CallbackComponent() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Submit form data to backend
-    fetch('http://localhost:3001/submit-forms', {
+    fetch('http://inde.physioplustech.in/submit-forms', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
