@@ -43,7 +43,7 @@ function App() {
           <Route path="/register/:id" element={<Register />} />
           <Route path="/c/login" element={<LoginCandidate />} />
           <Route path="/candidate/:candidateId" element={<Candidate />} />
-
+          <Route path="/Admin/job" element={<ContactForm/>}/>
           
 
         </Routes>

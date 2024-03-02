@@ -62,7 +62,7 @@ const ContactForm = () => {
                 <div className="row g-5">
                     <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: "visible", animationDelay: "0.1s", animationName: "fadeIn" }}>
                         <br /><br /><br /><br /><br />
-                        <h1 className="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
+                        <h1 className="display-5 mb-4">Enroll now and choose a better career</h1>
                         <form onSubmit={handleSubmit} id="form" role="form" noValidate>
                             <div className="row g-3">
                                 <div className="col-md-12">
@@ -145,7 +145,7 @@ const ContactForm = () => {
                                     </div>
                                 </div>
                                 <div className="col-12">
-                                    <button className="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                    <button className="btn btn-primary py-3 px-5" type="submit">Register</button>
                                 </div>
                             </div>
                         </form>

@@ -36,7 +36,7 @@ function CarouselComponent() {
     </p>
   </div>
   <h1 className="display-1 mb-4 slideInDown text-dark text-center">Physio job in Germany</h1>
-  <a href="https://indephysio.com/Admin/job" className="btn btn-primary py-3 px-5 slideInDown">Apply Now</a>
+  <a href="/Admin/job" className="btn btn-primary py-3 px-5 slideInDown">Apply Now</a>
 </div>
             </div>
           </div>

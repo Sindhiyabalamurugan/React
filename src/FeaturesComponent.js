@@ -16,7 +16,7 @@ function FeaturesComponent() {
             <p className="mb-4">
               Working in Germany is the action plan for everyone who aspires to a peaceful and balanced life, because Germany is the second-most richest economy and the country with the highest social benefits. There is no age limit, comfortable financial situation, and the social culture is focused on individuals' quality of life.
             </p>
-            <a className="btn btn-primary py-3 px-5" href="https://indephysio.com/Admin/job">Apply Now</a>
+            <a className="btn btn-primary py-3 px-5" href="/Admin/job">Apply Now</a>
           </div>
           <div className="col-lg-6">
             <div className="row g-4 align-items-center">

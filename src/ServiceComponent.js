@@ -51,7 +51,7 @@ function ServiceComponent() {
         <li>Fast track</li>
         <li>Qualified teachers</li>
       </ul>
-      <a href="https://indephysio.com/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
+      <a href="/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
     </div>
   </div>
 </div>
@@ -72,7 +72,7 @@ function ServiceComponent() {
         <li>Fail-Proof</li>
         <li>Desired Location</li>
       </ul>
-      <a href="https://indephysio.com/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
+      <a href="/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
     </div>
   </div>
 </div>
@@ -93,7 +93,7 @@ function ServiceComponent() {
         <li>Across Germany</li>
         <li>Attractive Salary</li>
       </ul>
-      <a href="https://indephysio.com/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
+      <a href="/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
     </div>
   </div>
 </div>
@@ -114,7 +114,7 @@ function ServiceComponent() {
         <li>Transparent Process</li>
         <li>Less Expensive</li>
       </ul>
-      <a href="https://indephysio.com/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
+      <a href="/Admin/job" className="btn btn-primary py-3 px-5 mt-3">Apply Now</a>
     </div>
   </div>
 </div>
