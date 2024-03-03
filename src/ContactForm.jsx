@@ -36,7 +36,7 @@ const ContactForm = () => {
         };
       
         try {
-          const response = await fetch('http://localhost:3001/add_form', {
+          const response = await fetch('http://inde.physioplustech.in/add_form', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
