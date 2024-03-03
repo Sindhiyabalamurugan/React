@@ -10,7 +10,7 @@ import WebinarComponent from "./WebinarComponent";
 function Home(){
     return (
         <>
-            <HeaderComponent/>
+            
             <CarouselComponent/>
             <AboutComponent/>
             <WebinarComponent/>
