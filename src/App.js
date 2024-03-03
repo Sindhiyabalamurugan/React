@@ -35,7 +35,7 @@ function App() {
        
         
         <Routes>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route exact path="/signup" element={<SignUpForm />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<CandidateStatusReport />} />
