@@ -25,7 +25,7 @@ function GermanJob() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/submitForm', {
+      const response = await fetch('http://inde.physioplustech.in/submitForm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
