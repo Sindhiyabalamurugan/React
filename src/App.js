@@ -14,7 +14,7 @@ import CallbackComponent from './CallbackComponent';
 import Footer from './Footer';
 import Login from './Login';
 import SignUpForm from './SignUpForm';
-
+import AdminSuccess from './AdminSuccess';
 import Projects from './Projects';
 import ContactForm from './ContactForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -24,6 +24,7 @@ import Register from './Register';
 import LoginCandidate from './LoginCandidate';
 import Candidate from './Candidate';
 import CarouselComponent from './CarouselComponent';
+import GermanJob from './GermanJob';
 
 function App() {
   return (
@@ -43,8 +44,9 @@ function App() {
           <Route path="/register/:id" element={<Register />} />
           <Route path="/c/login" element={<LoginCandidate />} />
           <Route path="/candidate/:candidateId" element={<Candidate />} />
-          <Route path="/Admin/job" element={<ContactForm/>}/>
-          
+          <Route path="/Admin/job" element={<ContactForm/>}/>          
+          <Route path="/Admin/success" element={<AdminSuccess/>}/>          
+          <Route path="/Admin/germanjob" element={<GermanJob/>}/>
 
         </Routes>
        

@@ -53,7 +53,7 @@ function CarouselComponent() {
             <div className="row justify-content-start">
               <div className="col-lg-7">
               <h1 className="display-1 mb-4 slideInDown text-dark">Wenn Sie ein Arbeitgeber sind und Physio sucht</h1>
-                <a href="https://indephysio.com/Admin/germanjob" className="btn btn-primary py-3 px-5 slideInDown">Klicken Sie hier</a>
+                <a href="/Admin/germanjob" className="btn btn-primary py-3 px-5 slideInDown">Klicken Sie hier</a>
               </div>
             </div>
           </div>
