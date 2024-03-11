@@ -61,7 +61,7 @@ function HeaderComponent() {
               </div>
             </div>
           )}
-          <Navbar.Brand href="https://indephysio.com/" className="ms-4 ms-lg-0">
+          <Navbar.Brand href="/" className="ms-4 ms-lg-0">
             <img className={`w-100 ${scrolled ? 'py-2' : ''}`} style={{ width: '100%', paddingTop: '15px', transition: 'padding 0.3s ease-in-out' }} src="https://indephysio.com//assets/img/Inde Physio Main Logo.png" alt="Image" />
           </Navbar.Brand>
           <Nav className={`ms-auto align-items-center d-flex ${scrolled ? 'text-dark' : 'text-white'}`}>
