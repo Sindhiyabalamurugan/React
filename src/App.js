@@ -27,7 +27,7 @@ import Candidate from './Candidate';
 import CarouselComponent from './CarouselComponent';
 import GermanJob from './GermanJob';
 import Articles from './Articles';
-import Testing from './Testing.js';
+
 function App() {
   const [isVisible,setIsVisible]=useState(false);
   useEffect(()=>{
@@ -67,7 +67,7 @@ function App() {
           <Route path="/Admin/success" element={<AdminSuccess/>}/>          
           <Route path="/Admin/germanjob" element={<GermanJob/>}/>
           <Route path="/Admin/articles" element={<Articles/>}/>
-          <Route path="/testing" element={<Testing/>}/>
+          
         </Routes>
        
       </div>
