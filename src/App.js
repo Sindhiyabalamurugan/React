@@ -25,6 +25,7 @@ import LoginCandidate from './LoginCandidate';
 import Candidate from './Candidate';
 import CarouselComponent from './CarouselComponent';
 import GermanJob from './GermanJob';
+import Articles from './Articles';
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
           <Route path="/Admin/job" element={<ContactForm/>}/>          
           <Route path="/Admin/success" element={<AdminSuccess/>}/>          
           <Route path="/Admin/germanjob" element={<GermanJob/>}/>
-
+          <Route path="/Admin/articles" element={<Articles/>}/>
         </Routes>
        
       </div>
