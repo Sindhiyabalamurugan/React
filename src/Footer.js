@@ -3,6 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import './Footer.css';
 
 // Add the icons to the library
 library.add(faMapMarkerAlt, faPhoneAlt, faEnvelope);
@@ -21,22 +22,22 @@ function Footer() {
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Services</h4>
             <ul className="list-unstyled">
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link">German Course</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link">Registration Process</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link">Job Placement</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link">Study in Germany</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link" className='expand-text'>German Course</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link" className='expand-text'>Registration Process</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link" className='expand-text'>Job Placement</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#services-link" className='expand-text'>Study in Germany</a></li>
             </ul>
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Job Location</h4>
             <ul className="list-unstyled">
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Frankfurt</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Munich</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Heidelberg</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Berlin</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Stuttgart</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Koln</a></li>
-              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link">Hamburg</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Frankfurt</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Munich</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Heidelberg</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Berlin</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Stuttgart</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Koln</a></li>
+              <li><BiChevronRight className="bi-link fa-1x text-primary" /><a href="#job-location-link" className='expand-text'>Hamburg</a></li>
             </ul>
           </div>
           <div className="col-lg-3 col-md-6">
