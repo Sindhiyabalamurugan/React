@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import './App.css'; // If you have any custom CSS
 
 import Home from './Home';
@@ -26,9 +27,26 @@ import Candidate from './Candidate';
 import CarouselComponent from './CarouselComponent';
 import GermanJob from './GermanJob';
 import Articles from './Articles';
-
+import Testing from './Testing.js';
 function App() {
-  return (
+  const [isVisible,setIsVisible]=useState(false);
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      const scroll_y_axis=window.scrollY;
+      if(scroll_y_axis > 300)
+      setIsVisible(true);
+      else
+      setIsVisible(false);
+    });
+
+    }
+  );
+
+  const scrollToTop=()=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  return (  
     <div>
      
        <HeaderComponent />
@@ -49,12 +67,17 @@ function App() {
           <Route path="/Admin/success" element={<AdminSuccess/>}/>          
           <Route path="/Admin/germanjob" element={<GermanJob/>}/>
           <Route path="/Admin/articles" element={<Articles/>}/>
+          <Route path="/testing" element={<Testing/>}/>
         </Routes>
        
       </div>
     </Router>
       <Footer />
-     
+      {isVisible && 
+        <div onClick={scrollToTop} className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" style={{ position: "fixed", right: "30px", bottom: "30px", zIndex: "99" }}>
+          <i className="bi bi-arrow-up"></i>
+        </div>
+      }
         </div>
       
   );
