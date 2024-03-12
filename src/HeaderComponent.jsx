@@ -67,7 +67,7 @@ function HeaderComponent() {
           <Nav className={`ms-auto align-items-center d-flex ${scrolled ? 'text-dark' : 'text-white'}`}>
             <Nav.Link href="/signup" className={`nav-link ${scrolled ? '' : 'text-white'}`} style={{ cursor: atTop ? 'pointer' : 'auto' }}>Referral</Nav.Link>
             <Nav.Link href="/dashboard" className={`nav-link ${scrolled ? '' : 'text-white'}`} style={{ cursor: atTop ? 'pointer' : 'auto' }}>Dashboard</Nav.Link>
-            <Button href="https://indephysio.com/Admin/articles" className={`btn btn-primary ${scrolled ? '' : 'text-white'}`}>Read Articles</Button>
+            <Button href="/Admin/articles" className={`btn btn-primary ${scrolled ? '' : 'text-white'}`}>Read Articles</Button>
           </Nav>
         </Navbar>
       </div>
