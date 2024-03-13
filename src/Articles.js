@@ -253,45 +253,79 @@ function Post3(){
     );
 }
 function Post4(){
-    return (
-        <div className='container-sm d-flex justify-content-center'>
-            <div className='container-sm'>
-                {/*
-                <div className='w-100'>
-                    <img style={{width:"100%"}} src="https://media.licdn.com/dms/image/D4E12AQHcpZs_aWz75Q/article-cover_image-shrink_423_752/0/1682846464087?e=1694649600&amp;v=beta&amp;t=RjDoNjdkQib0LlY-TH_LDQVNemjZH64PMpQGavSo0GM"/>
-                </div>
-                */}
-                <h1 style={{textAlign:'left'}}>Submit the form to get Zoom meeting link.</h1>
-                <div className='w-100'>
-                    <form>
-                        <div className='mb-3'>
-                            <div className='form-floating'>
-                                <input type='text' className='form-control' placeholder='' id='' required/>
-                                <label style={{fontWeight:'normal'}}>Full Name </label>
-                            </div>
-                        </div>
-                        <div className='mb-3'>
-                            <div className='form-floating'>
-                                <input type='email' className='form-control' placeholder='' id='' required/>
-                                <label style={{fontWeight:'normal'}}>Email address </label>
-                            </div>
-                        </div>
-                        <div className='mb-3'>
-                            <div className='form-floating'>
-                                <input type='number' className='form-control' placeholder='' id='' required/>
-                                <label style={{fontWeight:'normal'}}>Mobile </label>
-                            </div>
-                        </div>
-                        <div className='mb-3'>
-                                <label style={{fontWeight:'normal'}}>Professional level</label>
-                                <textarea className='form-control' id='' cols='30' rows='3' placeholder=' student at 7th semester/ 1 year experience/ 5 Years of experience'></textarea>
-                        </div>
-                        <button className="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+    const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    mobile: '',
+    professionalLevel: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://inde.physioplustech.in/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        // Clear form fields after submission if needed
+        setFormData({
+          fullName: '',
+          email: '',
+          mobile: '',
+          professionalLevel: ''
+        });
+      } else {
+        console.error('Error submitting form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
+
+  return (
+    <div className="container-sm d-flex justify-content-center">
+      <div className="container-sm">
+        <h1 style={{ textAlign: 'left' }}>Submit the form to get Zoom meeting link.</h1>
+        <div className="w-100">
+          <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <div className="form-floating">
+                <input type="text" className="form-control" placeholder="" name="fullName" value={formData.fullName} onChange={handleChange} required />
+                <label style={{ fontWeight: 'normal' }}>Full Name</label>
+              </div>
             </div>
+            <div className="mb-3">
+              <div className="form-floating">
+                <input type="email" className="form-control" placeholder="" name="email" value={formData.email} onChange={handleChange} required />
+                <label style={{ fontWeight: 'normal' }}>Email address</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="form-floating">
+                <input type="number" className="form-control" placeholder="" name="mobile" value={formData.mobile} onChange={handleChange} required />
+                <label style={{ fontWeight: 'normal' }}>Mobile</label>
+              </div>
+            </div>
+            <div className="mb-3">
+              <label style={{ fontWeight: 'normal' }}>Professional level</label>
+              <textarea className="form-control" cols="30" rows="3" placeholder=" student at 7th semester/ 1 year experience/ 5 Years of experience" name="professionalLevel" value={formData.professionalLevel} onChange={handleChange}></textarea>
+            </div>
+            <button className="btn btn-primary" type="submit">Submit</button>
+          </form>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Articles;
