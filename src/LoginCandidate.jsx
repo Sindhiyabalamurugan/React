@@ -66,6 +66,7 @@ const LoginCandidate = () => {
           onChange={(e) => setPassword(e.target.value)}
           error={error !== ""}
           helperText={error}
+          type="password"
         />
       </div>
 
