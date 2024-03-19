@@ -1,6 +1,6 @@
 import { CircularProgress } from "@mui/material";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function Testing(){
     const [isMobileValid,setIsMobileValid]=useState(true);
     const [mobileError,setMobileError]=useState('*Please Enter a Mobile Number');
@@ -8,6 +8,48 @@ function Testing(){
     const[loginArea,setLoginArea]=useState(false);
     const [loadingSendOtpButton,setLoadingSendOtpButton]=useState(false);
     const [loadingLoginButton,setLoadingLoginButton]=useState(false);
+
+    useEffect(()=>{
+        let otpFields=document.querySelectorAll('.otp');
+        const say_no_to_nonNumerics = (element) => element.target.value=element.target.value.replace(/\D/g,'');
+        const handlePasteData = (element) => {
+            let clipboardData = element.clipboardData.getData('text');
+            let list=clipboardData.split('');
+            let everyOtPFilled=true;
+            for(let i=0;i<otpFields.length;++i){
+                if(list[i]!=='' && !isNaN(list[i]))
+                otpFields[i].value=list[i];
+                else
+                everyOtPFilled&&=false;
+            }
+            if(everyOtPFilled)
+            otpFields[otpFields.length-1].focus();
+        }
+        const moveToNext = (element) => {
+            let currentElement=element.target;
+            if(currentElement.value!=='' && !isNaN(element.target.value)){
+                let nextElement=currentElement.parentElement.nextElementSibling;
+                if(nextElement)
+                nextElement.querySelector('input').focus();
+            }
+        }
+        for(let i=0;i<otpFields.length;++i){
+            if(i===0)
+            otpFields[i].addEventListener('paste',handlePasteData);
+
+            otpFields[i].addEventListener('input',say_no_to_nonNumerics);
+            otpFields[i].addEventListener('input',moveToNext);
+        }
+        return () =>{
+            for(let i=0;i<otpFields.length;++i){
+                if(i===0)
+                otpFields[i].removeEventListener('paste',handlePasteData);
+    
+                otpFields[i].removeEventListener('input',say_no_to_nonNumerics);
+                otpFields[i].removeEventListener('input',moveToNext);
+            }
+        }
+    });
 
     const handleChange = (e) => {
         let value=e.target.value;
