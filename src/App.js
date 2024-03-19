@@ -27,6 +27,7 @@ import Candidate from './Candidate';
 import CarouselComponent from './CarouselComponent';
 import GermanJob from './GermanJob';
 import Articles from './Articles';
+import ReferralIndex from './RefferalIndex';
 
 function App() {
   const [isVisible,setIsVisible]=useState(false);
@@ -67,7 +68,8 @@ function App() {
           <Route path="/Admin/success" element={<AdminSuccess/>}/>          
           <Route path="/Admin/germanjob" element={<GermanJob/>}/>
           <Route path="/Admin/articles" element={<Articles/>}/>
-          
+          <Route path="/referral/index" element={<ReferralIndex/>}/>
+
         </Routes>
        
       </div>
